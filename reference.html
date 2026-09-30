@@ -1,0 +1,517 @@
+<!doctype html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Vinay Badgujar - Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;family=Hanken+Grotesk:wght@600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#e5e2e1",
+              "on-secondary-fixed-variant": "#464747",
+              tertiary: "#ffffff",
+              secondary: "#c7c6c6",
+              "surface-variant": "#353534",
+              "primary-fixed": "#e2e2e2",
+              "on-primary": "#2f3131",
+              "surface-container-high": "#2a2a2a",
+              "on-error": "#690005",
+              "secondary-fixed": "#e3e2e2",
+              "on-primary-container": "#636565",
+              "surface-container-lowest": "#0e0e0e",
+              "surface-container-highest": "#353534",
+              "surface-bright": "#3a3939",
+              "inverse-primary": "#5d5f5f",
+              surface: "#131313",
+              "on-secondary-container": "#b8b8b8",
+              "on-primary-fixed": "#1a1c1c",
+              "surface-tint": "#c6c6c7",
+              primary: "#ffffff",
+              "tertiary-container": "#e4e2e1",
+              "inverse-surface": "#e5e2e1",
+              "primary-fixed-dim": "#c6c6c7",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#474746",
+              "surface-container": "#201f1f",
+              "on-secondary": "#2f3131",
+              "secondary-container": "#484949",
+              "inverse-on-surface": "#313030",
+              "outline-variant": "#444748",
+              "error-container": "#93000a",
+              outline: "#8e9192",
+              "surface-container-low": "#1c1b1b",
+              "on-tertiary-fixed": "#1b1c1c",
+              "secondary-fixed-dim": "#c7c6c6",
+              "surface-dim": "#131313",
+              "on-secondary-fixed": "#1a1c1c",
+              "on-background": "#e5e2e1",
+              background: "#131313",
+              "on-primary-fixed-variant": "#454747",
+              "tertiary-fixed": "#e4e2e1",
+              "primary-container": "#e2e2e2",
+              "on-tertiary-container": "#656464",
+              "on-surface-variant": "#c4c7c8",
+              error: "#ffb4ab",
+              "tertiary-fixed-dim": "#c8c6c5",
+              "on-tertiary": "#303030",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              base: "4px",
+              "margin-mobile": "16px",
+              "margin-desktop": "32px",
+              xl: "48px",
+              gutter: "16px",
+              xs: "4px",
+              lg: "24px",
+              sm: "8px",
+              md: "16px",
+            },
+            fontFamily: {
+              "headline-md": ["Geist"],
+              "body-lg": ["Geist"],
+              "headline-lg": ["Geist"],
+              "label-sm": ["JetBrains Mono"],
+              "headline-lg-mobile": ["Geist"],
+              "body-md": ["Geist"],
+              "label-md": ["JetBrains Mono"],
+              display: ["Geist"],
+            },
+            fontSize: {
+              "headline-md": [
+                "24px",
+                {
+                  lineHeight: "1.3",
+                  fontWeight: "500",
+                },
+              ],
+              "body-lg": [
+                "18px",
+                {
+                  lineHeight: "1.6",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-lg": [
+                "32px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "500",
+                },
+              ],
+              "label-sm": [
+                "12px",
+                {
+                  lineHeight: "1.4",
+                  letterSpacing: "0.05em",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-lg-mobile": [
+                "24px",
+                {
+                  lineHeight: "1.2",
+                  fontWeight: "500",
+                },
+              ],
+              "body-md": [
+                "16px",
+                {
+                  lineHeight: "1.6",
+                  fontWeight: "400",
+                },
+              ],
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "1.4",
+                  letterSpacing: "0.05em",
+                  fontWeight: "500",
+                },
+              ],
+              display: [
+                "48px",
+                {
+                  lineHeight: "1.1",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .github-cell {
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        background-color: #201f1f;
+      }
+      .github-cell-level-1 {
+        background-color: #353534;
+      }
+      .github-cell-level-2 {
+        background-color: #5d5f5f;
+      }
+      .github-cell-level-3 {
+        background-color: #8e9192;
+      }
+      .github-cell-level-4 {
+        background-color: #e5e2e1;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background text-primary font-body-md text-body-md selection:bg-surface-variant selection:text-primary"
+  >
+    <div class="max-w-[680px] mx-auto px-lg py-[64px]">
+      <!-- Header / Profile Section -->
+      <header class="flex flex-col md:flex-row gap-lg items-start mb-[64px]">
+        <div class="flex flex-col gap-sm w-full">
+          <h1 class="font-display text-display">Vinay Badgujar</h1>
+          <div
+            class="flex flex-wrap gap-x-4 gap-y-2 mt-2 font-label-md text-label-md"
+          >
+            <a
+              class="text-primary hover:underline underline-offset-4 decoration-outline-variant transition-all"
+              href="tel:+919156583398"
+              >+91 9156583398</a
+            >
+            <span class="text-outline-variant">·</span>
+            <a
+              class="text-primary hover:underline underline-offset-4 decoration-outline-variant transition-all"
+              href="mailto:vinaybadgujar8@gmail.com"
+              >vinaybadgujar8@gmail.com</a
+            >
+            <span class="text-outline-variant">·</span>
+            <a
+              class="text-primary hover:underline underline-offset-4 decoration-outline-variant transition-all"
+              href="#"
+              >linkedin</a
+            >
+            <span class="text-outline-variant">·</span>
+            <a
+              class="text-primary hover:underline underline-offset-4 decoration-outline-variant transition-all"
+              href="#"
+              >github</a
+            >
+          </div>
+        </div>
+      </header>
+      <!-- GitHub Sparkline (Visual Only) -->
+      <section class="mb-[64px] overflow-x-auto pb-4 hide-scrollbar">
+        <div class="flex gap-1 min-w-max">
+          <!-- Generating random looking grid -->
+          <script>
+            const months = [
+              "Aug",
+              "Sep",
+              "Oct",
+              "Nov",
+              "Dec",
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "May",
+              "Jun",
+              "Jul",
+            ];
+            document.write(`<div class="flex flex-col gap-1">`);
+            document.write(
+              `<div class="flex gap-1 mb-1 text-[10px] text-outline font-label-sm">`,
+            );
+            months.forEach((m) =>
+              document.write(`<div style="width: 44px">${m}</div>`),
+            );
+            document.write(`</div>`);
+
+            document.write(`<div class="flex gap-1">`);
+            for (let w = 0; w < 52; w++) {
+              document.write(`<div class="flex flex-col gap-1">`);
+              for (let d = 0; d < 7; d++) {
+                const level =
+                  Math.random() > 0.7 ? Math.floor(Math.random() * 4) + 1 : 0;
+                const classLevel = level ? `github-cell-level-${level}` : "";
+                document.write(`<div class="github-cell ${classLevel}"></div>`);
+              }
+              document.write(`</div>`);
+            }
+            document.write(`</div></div>`);
+          </script>
+        </div>
+      </section>
+      <!-- Experience Timeline -->
+      <section class="mb-[64px]">
+        <h2 class="font-body-lg text-body-lg text-outline mb-lg">
+          work experience
+        </h2>
+        <hr class="border-t border-outline-variant mb-lg" />
+        <div class="flex flex-col gap-lg">
+          <div class="flex flex-col">
+            <div class="flex justify-between items-baseline">
+              <h3 class="font-headline-md text-headline-md text-on-surface">
+                ZinZen.me
+              </h3>
+              <span class="font-label-sm text-label-sm text-outline"
+                >Sep 2023 – Feb 2026</span
+              >
+            </div>
+            <p class="font-body-md text-body-md text-outline mt-1 italic">
+              Contract Fullstack Developer, Remote, Netherlands
+            </p>
+            <ul
+              class="mt-4 list-disc list-inside flex flex-col gap-2 text-sm text-on-surface-variant"
+            >
+              <li>
+                Architected a full stack
+                <strong class="text-on-surface">goal management system</strong>
+                with goal hierarchy and time budgeting features. Implemented an
+                <strong class="text-on-surface">offline first</strong>
+                architecture for seamless user experience.
+              </li>
+              <li>
+                Optimized user interactions by implementing
+                <strong class="text-on-surface">optimistic updates</strong>,
+                reducing perceived latency by
+                <strong class="text-on-surface">60%</strong> across critical
+                actions like goal creation, editing, and movement. Designed
+                automatic rollback mechanisms to ensure data consistency while
+                providing instant UI feedback.
+              </li>
+              <li>
+                Integrated <strong class="text-on-surface">CRDTs</strong> into
+                the offline-first architecture, enabling reliable
+                synchronization and conflict-free merging of collaborative
+                entities across multiple devices.
+              </li>
+              <li>
+                Built a comprehensive suite of reusable
+                <strong class="text-on-surface">React components</strong>
+                including autocomplete, modal dialogs, and goal management
+                interfaces; refactored existing components using
+                <strong class="text-on-surface">custom hooks</strong> and
+                <strong class="text-on-surface">TypeScript</strong>, reducing
+                code duplication by
+                <strong class="text-on-surface">40%</strong> and improving
+                maintainability through standardized component patterns.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Projects / Proof of Work -->
+      <section class="mb-[64px]">
+        <h2 class="font-body-lg text-body-lg text-outline mb-lg">projects</h2>
+        <hr class="border-t border-outline-variant mb-lg" />
+        <div class="flex flex-col gap-lg">
+          <div class="flex flex-col">
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="font-headline-md text-headline-md text-on-surface">
+                Perpetual Futures Trading Platform
+              </h3>
+              <div
+                class="font-label-sm text-label-sm flex gap-2 text-on-surface"
+              >
+                <a class="hover:underline underline-offset-4" href="#"
+                  >GitHub</a
+                >
+                <span class="text-outline-variant">·</span>
+                <a class="hover:underline underline-offset-4" href="#">Live</a>
+              </div>
+            </div>
+            <ul
+              class="mt-4 list-disc list-inside flex flex-col gap-2 text-sm text-on-surface-variant"
+            >
+              <li>
+                Architected a
+                <strong class="text-on-surface"
+                  >distributed perpetual futures platform</strong
+                >
+                with
+                <strong class="text-on-surface">multi-market support</strong>
+                across independent services including a
+                <strong class="text-on-surface">matching engine</strong>, REST
+                API, <strong class="text-on-surface">WebSocket</strong> gateway,
+                async <strong class="text-on-surface">db-poller</strong>, and a
+                <strong class="text-on-surface">TanStack React</strong> trading
+                UI.
+              </li>
+              <li>
+                Implemented
+                <strong class="text-on-surface"
+                  >event-driven, asynchronous communication</strong
+                >
+                using <strong class="text-on-surface">Redis Streams</strong>.
+                The API publishes commands to a
+                <strong class="text-on-surface">send queue</strong>; the trade
+                engine processes them and emits to a shared
+                <strong class="text-on-surface">response queue</strong> consumed
+                in parallel by the API for request/response correlation, the
+                WebSocket broadcaster, and the Postgres writer.
+              </li>
+              <li>
+                Built an in-memory
+                <strong class="text-on-surface">matching engine</strong> with
+                limit &amp; market orders, collateral validation,
+                <strong class="text-on-surface">liquidation</strong>, and
+                periodic
+                <strong class="text-on-surface">funding rate</strong>
+                settlement. Used an internal
+                <strong class="text-on-surface">pub/sub</strong> layer to fan
+                out orderbook depth, trades, index price, and user events
+                without blocking the hot path.
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="font-headline-md text-headline-md text-on-surface">
+                LetsSolve: Scalable Online Judge Platform
+              </h3>
+              <div
+                class="font-label-sm text-label-sm flex gap-2 text-on-surface"
+              >
+                <a class="hover:underline underline-offset-4" href="#"
+                  >GitHub</a
+                >
+                <span class="text-outline-variant">·</span>
+                <a class="hover:underline underline-offset-4" href="#">Live</a>
+              </div>
+            </div>
+            <ul
+              class="mt-4 list-disc list-inside flex flex-col gap-2 text-sm text-on-surface-variant"
+            >
+              <li>
+                Architected a
+                <strong class="text-on-surface"
+                  >microservices-based online judge platform</strong
+                >
+                deployed on <strong class="text-on-surface">AWS</strong>,
+                enabling scalable code compilation and execution through
+                auto-scaling, load balancing, and fault-tolerant infrastructure.
+              </li>
+              <li>
+                Developed a high-performance
+                <strong class="text-on-surface">Executor Service</strong> using
+                <strong class="text-on-surface">TypeScript, Express</strong>,
+                and <strong class="text-on-surface">Docker</strong> to securely
+                execute
+                <strong class="text-on-surface">Java, Python, and C++</strong>
+                programs. Applied the
+                <strong class="text-on-surface">Strategy</strong> and
+                <strong class="text-on-surface">Factory</strong> design patterns
+                to support multiple language runtimes and handle execution
+                constraints such as
+                <strong class="text-on-surface"
+                  >Time Limit Exceeded (TLE)</strong
+                >.
+              </li>
+              <li>
+                Built a <strong class="text-on-surface">Fastify</strong>-based
+                submission service with asynchronous processing using
+                <strong class="text-on-surface">Redis message queues</strong>
+                and integrated
+                <strong class="text-on-surface">WebSocket</strong> updates for
+                real-time compilation and execution status. Developed a
+                responsive
+                <strong class="text-on-surface">React + TypeScript</strong>
+                frontend with <strong class="text-on-surface">Redux</strong> for
+                state management and an interactive problem-solving experience.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Education -->
+      <section class="mb-[64px]">
+        <h2 class="font-body-lg text-body-lg text-outline mb-lg">education</h2>
+        <hr class="border-t border-outline-variant mb-lg" />
+        <div class="flex flex-col">
+          <div class="flex justify-between items-baseline">
+            <h3 class="font-headline-md text-headline-md text-on-surface">
+              R.C. Patel Institute of Technology, Shirpur
+            </h3>
+            <span class="font-label-sm text-label-sm text-outline"
+              >2019 – 2023</span
+            >
+          </div>
+          <p class="font-body-md text-body-md text-outline mt-1 italic">
+            B.Tech in Computer Engineering
+          </p>
+        </div>
+      </section>
+      <!-- Technical Skills -->
+      <section class="mb-[64px]">
+        <h2 class="font-body-lg text-body-lg text-outline mb-lg">
+          technical skills
+        </h2>
+        <hr class="border-t border-outline-variant mb-lg" />
+        <div class="flex flex-col gap-2 text-sm text-on-surface-variant">
+          <p>
+            <strong class="text-on-surface">Languages:</strong> JavaScript,
+            TypeScript
+          </p>
+          <p>
+            <strong class="text-on-surface">Backend:</strong> Node.js, Bun,
+            Express.js, Prisma, PostgreSQL, Redis, WebSockets, Zod, JWT
+          </p>
+          <p>
+            <strong class="text-on-surface">AI &amp; Agents:</strong>
+            Tool/Function Calling, Agent Loops, Context Window Management,
+            Skills &amp; Lifecycle Hooks
+          </p>
+          <p>
+            <strong class="text-on-surface">Architecture:</strong> Agent
+            Harnesses, Microservices, Event Driven Systems, Async Message
+            Queues, Monorepos, Distributed Systems
+          </p>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer
+        class="flex flex-col gap-md w-full max-w-[680px] mx-auto py-lg border-t border-outline-variant mt-[64px]"
+      >
+        <p class="font-body-md text-body-md text-on-surface">
+          wanna chat?
+          <a
+            class="underline decoration-1 underline-offset-4 hover:text-outline transition-colors"
+            href="mailto:vinaybadgujar8@gmail.com"
+            >let's talk</a
+          >
+        </p>
+        <div class="flex justify-between items-center w-full">
+          <a
+            class="font-label-sm text-label-sm text-outline hover:text-primary transition-colors"
+            href="#"
+            >← see the colors</a
+          >
+          <span class="font-label-sm text-label-sm text-outline"
+            >© 2024 · built for focus</span
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

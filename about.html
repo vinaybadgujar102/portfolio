@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>About · Vinay Badgujar</title>
+    <meta
+      name="description"
+      content="About Vinay Badgujar — fullstack developer from Shirpur, currently building at ZinZen."
+    />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var dark =
+            stored === "dark" ||
+            (!stored &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches);
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <main class="page" id="main">
+      <div class="inner">
+        <div class="top-bar">
+          <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle color theme"
+            aria-pressed="false"
+          >
+            dark
+          </button>
+        </div>
+
+        <p class="page-kicker">Some quick facts</p>
+        <h1 class="name">About me</h1>
+
+        <div class="intro">
+          <p>
+            Hi, I’m Vinay. I’m a fullstack developer who likes taking messy
+            systems and making them feel simple to use. I write React and
+            TypeScript on the client, Node on the server, and I care a lot about
+            latency, sync, and whether the thing still works when the network
+            doesn’t.
+          </p>
+        </div>
+
+        <section class="section" aria-labelledby="notes-heading">
+          <h2 class="section-title" id="notes-heading">A few notes along the way</h2>
+          <hr class="rule" />
+          <ol class="notes">
+            <li>
+              <span class="note-num" aria-hidden="true">1</span>
+              <p>
+                I studied Computer Engineering at R.C. Patel Institute of
+                Technology, Shirpur (2019–2023). That’s still home base.
+              </p>
+            </li>
+            <li>
+              <span class="note-num" aria-hidden="true">2</span>
+              <p>
+                I’ve been a contract fullstack developer at ZinZen.me since 2023
+                — offline-first goals, CRDT sync, optimistic updates, and a
+                React/TypeScript component system.
+              </p>
+            </li>
+            <li>
+              <span class="note-num" aria-hidden="true">3</span>
+              <p>
+                I build in public: a perpetual futures platform, a scalable
+                online judge, and smaller experiments like local agents and
+                cold email tools.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="section" aria-labelledby="today-heading">
+          <h2 class="section-title" id="today-heading">Where I am today</h2>
+          <hr class="rule" />
+          <p class="entry-desc">
+            Still writing software that should feel obvious once it’s done.
+            Currently open to work —
+            <a href="mailto:vinaybadgujar8@gmail.com?subject=Hiring">hire me</a>.
+          </p>
+        </section>
+
+        <section class="section" aria-labelledby="connect-heading">
+          <h2 class="section-title" id="connect-heading">Let’s connect</h2>
+          <hr class="rule" />
+          <nav class="connect" aria-label="Social links">
+            <a href="mailto:vinaybadgujar8@gmail.com">Email</a>
+            <a
+              href="https://www.linkedin.com/in/badgujarvinay/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              href="https://x.com/badgujarvinay09"
+              target="_blank"
+              rel="noopener noreferrer"
+              >X</a
+            >
+            <a
+              href="https://github.com/vinaybadgujar102"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </nav>
+        </section>
+      </div>
+    </main>
+
+    <nav class="dock" aria-label="Sections">
+      <div class="dock-shell">
+        <div class="dock-items">
+          <a class="dock-item" href="index.html" data-page="home" aria-label="Home">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"
+              />
+              <path
+                d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              />
+            </svg>
+            <span class="dock-dot" aria-hidden="true"></span>
+          </a>
+          <a class="dock-item" href="work.html" data-page="work" aria-label="Work">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect width="7" height="7" x="3" y="3" rx="1" />
+              <rect width="7" height="7" x="14" y="3" rx="1" />
+              <rect width="7" height="7" x="14" y="14" rx="1" />
+              <rect width="7" height="7" x="3" y="14" rx="1" />
+            </svg>
+            <span class="dock-dot" aria-hidden="true"></span>
+          </a>
+          <a class="dock-item" href="play.html" data-page="play" aria-label="Play">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+              />
+              <path d="m15 5 4 4" />
+            </svg>
+            <span class="dock-dot" aria-hidden="true"></span>
+          </a>
+          <a
+            class="dock-item"
+            href="about.html"
+            data-page="about"
+            aria-label="About"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="8" r="5" />
+              <path d="M20 21a8 8 0 0 0-16 0" />
+            </svg>
+            <span class="dock-dot" aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="dock-ruler" aria-hidden="true"></div>
+      </div>
+    </nav>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
